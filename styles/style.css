@@ -33,12 +33,18 @@ section {
 
 .section-title {
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .section-description {
     font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 30px;
     opacity: .5;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
 }
 
 /* Nav Bar */
@@ -171,6 +177,32 @@ section {
 }
 
 
+/* Change habits */
+.habits {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 30px;
+}
+.habit {
+    text-align: center;
+}
+.habit img {
+    border-radius: 50%;
+    padding-bottom: 30px;
+}
+.habit h4 {
+    font-size: 18px;
+}
+.habit p {
+    opacity: .5;
+    font-size: 14px;
+    line-height: 21px;
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    
+}
 
 
 /* mobile device */
@@ -182,6 +214,7 @@ section {
     .container{
         max-width: 98%;
     }
+    /* banner for mobile */
     .nav-links {
         display: none;
     }
@@ -195,9 +228,7 @@ section {
     .banner > div {
         max-width: 100%;
     }
-    .banner-title {
-       
-    }
+    
     .button {
         font-size: 16px;
         padding: 15px 20px;
@@ -208,5 +239,10 @@ section {
     .number-of-tutorial {
         left: -30px;
         bottom: 250px;
+    }
+
+    /* habit section */
+    .habits {
+        flex-direction: column;
     }
 }

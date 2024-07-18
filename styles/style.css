@@ -26,7 +26,8 @@ section {
     margin: 30px 0px;
 }
 .container {
-    max-width: 85%;
+    width: 85%;
+    max-width: 1280px;
     margin: auto;
     padding: 30px 20px;
 }
@@ -35,16 +36,17 @@ section {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 20px;
+    line-height: 4.5rem;
 }
 
 .section-description {
     font-size: 14px;
     line-height: 21px;
+    margin: auto;
     margin-bottom: 30px;
     opacity: .5;
     text-align: center;
     max-width: 600px;
-    margin: auto;
 }
 
 /* Nav Bar */
@@ -204,6 +206,31 @@ section {
     
 }
 
+/* Run Extra Section */
+.extra-run {
+    display: flex;
+    background-color: var(--light-bg);
+    border-radius: 18px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.extra-run .extra-run-content {
+    max-width: 32%;
+}
+.extra-run-content h2 {
+    text-align: left;
+}
+.extra-run-content p {
+    text-align: left;
+}
+.extra-run > div {
+    max-width: 40%;
+}
+.extra-run img {
+    width: 100%;
+    border-radius: 18px;
+}
 
 /* mobile device */
 @media  screen and (max-width: 576px) {
@@ -242,7 +269,16 @@ section {
     }
 
     /* habit section */
-    .habits {
+    .habits, .extra-run {
         flex-direction: column;
+    }
+    .extra-run > div, .extra-run > .extra-run-content {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .extra-run .button {
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 }

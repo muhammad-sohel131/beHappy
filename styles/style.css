@@ -26,7 +26,7 @@ section {
     margin: 30px 0px;
 }
 .container {
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
     padding: 30px 20px;
 }
@@ -39,4 +39,127 @@ section {
 .section-description {
     font-size: 14px;
     opacity: .5;
+}
+
+/* Nav Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.nav-links .nav-link {
+    text-decoration: none;
+    font-weight: normal;
+    color: #fff;
+}
+.active {
+    background-color: var(--primary-color);
+    padding: 8px 24px;
+    border-radius: 46px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner > div {
+    max-width: 50%;
+}
+.banner-title {
+    font-size: 78px;
+    line-height: 100px;
+}
+.banner-title span {
+    font-family: var(--playWrite-font);
+    font-weight: normal;
+    font-style: italic;
+}
+.banner-description {
+    font-size: 16px;
+    opacity: .5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    max-width: 75%;
+}
+.buttons {
+    display: flex;
+    column-gap: 20px;
+    padding-top: 20px;
+}
+.button {
+    padding: 16px 40px;
+    border-radius: 42px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+.primary-button {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+.banner-image {
+    position: relative;
+}
+.number-of-tutorial, .number-of-workout {
+    padding: 20px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 14px -5px #fff;
+    background-color: rgba(48, 48, 48, .5);
+}
+
+.number-of-workout {
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    top: 130px;
+    right: -50px;
+}
+.number-of-workout h3 {
+    font-size: 40px;
+}
+.number-of-workout p {
+    opacity: .5;
+    font-size: 13px;
+}
+.number-of-tutorial {
+    column-gap: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: -80px;
+}
+.number-of-tutorial h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+.number-of-tutorial p {
+    font-size: 16px;
+    opacity: .5;
+}
+.icon-box {
+    background: var(--primary-color);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }

@@ -53,6 +53,9 @@ section {
     font-weight: 800;
     color: var(--primary-color);
 }
+.mobile-menu {
+    display: none;
+}
 .nav-links {
     list-style: none;
     display: flex;
@@ -80,8 +83,8 @@ section {
     max-width: 50%;
 }
 .banner-title {
-    font-size: 78px;
-    line-height: 100px;
+    font-size: 4.8rem;
+    line-height: 6.25rem;
 }
 .banner-title span {
     font-family: var(--playWrite-font);
@@ -104,7 +107,7 @@ section {
 .button {
     padding: 16px 40px;
     border-radius: 42px;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
     border: 1px solid #fff;
@@ -117,7 +120,7 @@ section {
     position: relative;
 }
 .number-of-tutorial, .number-of-workout {
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -131,10 +134,11 @@ section {
     flex-direction: column;
     position: absolute;
     top: 130px;
-    right: -50px;
+    right: 0px;
 }
 .number-of-workout h3 {
     font-size: 40px;
+    line-height: 60px;
 }
 .number-of-workout p {
     opacity: .5;
@@ -144,10 +148,11 @@ section {
     column-gap: 20px;
     position: absolute;
     bottom: 60px;
-    left: -80px;
+    left: 0px;
 }
 .number-of-tutorial h3 {
     font-size: 24px;
+    line-height: 36px;
     font-weight: 800;
 }
 .number-of-tutorial p {
@@ -162,4 +167,46 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+/* mobile device */
+@media  screen and (max-width: 576px) {
+    html {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .container{
+        max-width: 98%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+        font-size: 30px;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .banner > div {
+        max-width: 100%;
+    }
+    .banner-title {
+       
+    }
+    .button {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+    .number-of-workout {
+        top: 70px;
+    }
+    .number-of-tutorial {
+        left: -30px;
+        bottom: 250px;
+    }
 }

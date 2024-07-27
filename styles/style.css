@@ -122,6 +122,10 @@ img {
     color: #fff;
     text-decoration: none;
     border: 1px solid #fff;
+    width: 224px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
 }
 .primary-button {
     border-color: var(--primary-color);
@@ -235,6 +239,108 @@ img {
     border-radius: 18px;
 }
 
+/* BMI Calculator */
+#bmiCalculator {
+    margin-top: 60px;
+}
+
+.section-intro {
+    max-width: 800px;
+    margin: auto;
+}
+.section-intro .section-title {
+    text-align: left;
+}
+.section-intro .section-description {
+    text-align: left;
+    margin: auto 0px;
+    margin-bottom: 0px;
+}
+#bmiCalculator  .bmi-wrapper{
+    background-color: var(--light-bg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+.bmi-container {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+.bmi-chart {
+    width: 30%;
+}
+.calculate-bmi {
+    width: 55%;
+}
+.bmi-container h2 {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+.bmi-container .section-description {
+    text-align: left;
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
+.bmi-table {
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.bmi-table td, .bmi-table th {
+    border: 1px solid rgba(255,255,255,.1);
+    text-align: left;
+    padding: 16px 18px;
+    font-size: 14px;
+    opacity: .5;
+}
+.bmi-table th {
+    font-size: 16px;
+    opacity: 1;
+}
+.input-form {
+    display: grid;
+    gap: 12px;
+    grid-template-areas: 
+    "height weigh"
+    "age gender"
+    "factor factor";
+}
+.height {
+    grid-area: height;
+}
+.weight {
+    grid-area: weigh;
+}
+.age {
+    grid-area: age;
+}
+#gender {
+    grid-area: gender;
+}
+#activityFactor {
+    grid-area: factor;
+    margin-bottom: 35px;
+}
+.input-form input, .input-form select {
+    padding: 20px 35px;
+    background-color: rgba(255,255,255,.1);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    opacity: .5;
+    font-size: 16px;
+    width: 100%;
+}
+.input-form select option {
+    background-color: var(--light-bg);
+}
+.input-form input::placeholder {
+    color: #fff;
+}
 /* our team */
 .team-container {
     display: grid;
@@ -351,11 +457,12 @@ footer {
     }
 
     /* habit section */
-    .habits, .extra-run, .footer {
+    .habits, .extra-run, .footer, .bmi-container {
         flex-direction: column;
     }
-    .footer-column {
+    .footer-column, .bmi-chart, .calculate-bmi {
         max-width: 100%;
+        width: 100%;
     }
     .extra-run > div, .extra-run > .extra-run-content {
         max-width: 100%;

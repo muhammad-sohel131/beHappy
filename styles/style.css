@@ -41,13 +41,13 @@ img {
 .section-title {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 4.5rem;
 }
 
 .section-description {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 22px;
     margin: auto;
     margin-bottom: 30px;
     opacity: .5;
@@ -104,8 +104,8 @@ img {
 }
 
 .banner-title {
-    font-size: 4.8rem;
-    line-height: 6.25rem;
+    font-size: 4rem;
+    line-height: 6rem;
 }
 
 .banner-title span {

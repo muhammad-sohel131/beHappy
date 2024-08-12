@@ -16,6 +16,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body {
     background: #000;
     font-family: var(--inter-font);
@@ -25,9 +26,11 @@ body {
 section {
     margin: 30px 0px;
 }
+
 img {
     max-width: 100%;
 }
+
 .container {
     width: 85%;
     max-width: 1280px;
@@ -58,26 +61,31 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
 .nav .logo {
     font-size: 36px;
     font-style: italic;
     font-weight: 800;
     color: var(--primary-color);
 }
+
 .mobile-menu {
     display: none;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
     column-gap: 30px;
 }
+
 .nav-links .nav-link {
     text-decoration: none;
     font-weight: normal;
     color: #fff;
 }
+
 .active {
     background-color: var(--primary-color);
     padding: 8px 24px;
@@ -90,18 +98,22 @@ img {
     align-items: center;
     justify-content: space-between;
 }
-.banner > div {
+
+.banner>div {
     max-width: 50%;
 }
+
 .banner-title {
     font-size: 4.8rem;
     line-height: 6.25rem;
 }
+
 .banner-title span {
     font-family: var(--playWrite-font);
     font-weight: normal;
     font-style: italic;
 }
+
 .banner-description {
     font-size: 16px;
     opacity: .5;
@@ -110,11 +122,13 @@ img {
     line-height: 24px;
     max-width: 75%;
 }
+
 .buttons {
     display: flex;
     column-gap: 20px;
     padding-top: 20px;
 }
+
 .button {
     padding: 16px 40px;
     border-radius: 42px;
@@ -127,14 +141,18 @@ img {
     text-align: center;
     cursor: pointer;
 }
+
 .primary-button {
     border-color: var(--primary-color);
     background-color: var(--primary-color);
 }
+
 .banner-image {
     position: relative;
 }
-.number-of-tutorial, .number-of-workout {
+
+.number-of-tutorial,
+.number-of-workout {
     padding: 10px 20px;
     border-radius: 12px;
     display: flex;
@@ -151,29 +169,35 @@ img {
     top: 130px;
     right: 0px;
 }
+
 .number-of-workout h3 {
     font-size: 40px;
     line-height: 60px;
 }
+
 .number-of-workout p {
     opacity: .5;
     font-size: 13px;
 }
+
 .number-of-tutorial {
     column-gap: 20px;
     position: absolute;
     bottom: 60px;
     left: 0px;
 }
+
 .number-of-tutorial h3 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 800;
 }
+
 .number-of-tutorial p {
     font-size: 16px;
     opacity: .5;
 }
+
 .icon-box {
     background: var(--primary-color);
     width: 45px;
@@ -193,16 +217,20 @@ img {
     justify-content: space-between;
     gap: 30px;
 }
+
 .habit {
     text-align: center;
 }
+
 .habit img {
     border-radius: 50%;
     padding-bottom: 30px;
 }
+
 .habit h4 {
     font-size: 18px;
 }
+
 .habit p {
     opacity: .5;
     font-size: 14px;
@@ -210,7 +238,7 @@ img {
     margin: auto;
     margin-top: 10px;
     width: 300px;
-    
+
 }
 
 /* Run Extra Section */
@@ -222,18 +250,23 @@ img {
     align-items: center;
     padding: 30px;
 }
+
 .extra-run .extra-run-content {
     max-width: 32%;
 }
+
 .extra-run-content h2 {
     text-align: left;
 }
+
 .extra-run-content p {
     text-align: left;
 }
-.extra-run > div {
+
+.extra-run>div {
     max-width: 40%;
 }
+
 .extra-run img {
     width: 100%;
     border-radius: 18px;
@@ -248,85 +281,104 @@ img {
     max-width: 800px;
     margin: auto;
 }
+
 .section-intro .section-title {
     text-align: left;
 }
+
 .section-intro .section-description {
     text-align: left;
     margin: auto 0px;
     margin-bottom: 0px;
 }
-#bmiCalculator  .bmi-wrapper{
+
+#bmiCalculator .bmi-wrapper {
     background-color: var(--light-bg);
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 88px;
     margin-bottom: 88px;
 }
+
 .bmi-container {
     display: flex;
     justify-content: space-between;
     row-gap: 40px;
 }
+
 .bmi-chart {
     width: 30%;
 }
+
 .calculate-bmi {
     width: 55%;
 }
+
 .bmi-container h2 {
     font-size: 1.7rem;
     line-height: 2.5rem;
 }
+
 .bmi-container .section-description {
     text-align: left;
     margin: 0;
     margin-top: 14px;
     margin-bottom: 34px;
 }
+
 .bmi-table {
     border-collapse: collapse;
     margin-top: 30px;
 }
 
-.bmi-table td, .bmi-table th {
-    border: 1px solid rgba(255,255,255,.1);
+.bmi-table td,
+.bmi-table th {
+    border: 1px solid rgba(255, 255, 255, .1);
     text-align: left;
     padding: 16px 18px;
     font-size: 14px;
     opacity: .5;
 }
+
 .bmi-table th {
     font-size: 16px;
     opacity: 1;
 }
+
 .input-form {
     display: grid;
     gap: 12px;
-    grid-template-areas: 
-    "height weigh"
-    "age gender"
-    "factor factor";
+    grid-template-areas:
+        "height weigh"
+        "age gender"
+        "factor factor";
 }
+
 .height {
     grid-area: height;
 }
+
 .weight {
     grid-area: weigh;
 }
+
 .age {
     grid-area: age;
 }
+
 #gender {
     grid-area: gender;
 }
+
 #activityFactor {
     grid-area: factor;
     margin-bottom: 35px;
 }
-.input-form input, .input-form select {
+
+.input-form input,
+.input-form select {
     padding: 20px 35px;
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255, 255, 255, .1);
     border: none;
     outline: none;
     border-radius: 8px;
@@ -335,12 +387,15 @@ img {
     font-size: 16px;
     width: 100%;
 }
+
 .input-form select option {
     background-color: var(--light-bg);
 }
+
 .input-form input::placeholder {
     color: #fff;
 }
+
 /* our team */
 .team-container {
     display: grid;
@@ -348,42 +403,111 @@ img {
     gap: 20px;
     margin-top: 60px;
 }
+
 .team-member {
     background-position: center;
     background-size: cover;
     height: 270px;
     border-radius: 18px;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
     background-blend-mode: overlay;
     position: relative;
 }
+
 .team-member-content {
     position: absolute;
     left: 30px;
     bottom: 30px;
 }
+
 .team-member-content h4 {
     font-size: 20px;
     line-height: 30px;
 }
+
 .team-member-content p {
     font-size: 14px;
     opacity: .5;
 }
 
+/* Prices section */
+
+.prices-container {
+    display: flex;
+    margin-top: 75px;
+    justify-content: space-between;
+}
+
+.package {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 32px -20px rgba(255, 255, 255, .9);
+
+}
+
+.price-title {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+}
+
+.money {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #E6533C;
+    line-height: 4.2rem;
+}
+
+.money span {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.services {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.notice {
+    opacity: .5;
+    max-width: 75%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.package .button {
+    width: 275px;
+    margin-top: 30px;
+    display: unset;
+}
+
 /* footer */
 footer {
-    background-color: rgba(255,255,255,.1);
+    background-color: var(--light-bg);
 }
+
 .footer {
     display: flex;
     gap: 30px;
     justify-content: space-between;
     padding: 30px 0;
 }
+
 .footer-column {
     max-width: 33%;
 }
+
 .footer-logo {
     color: var(--primary-color);
     font-style: italic;
@@ -391,88 +515,117 @@ footer {
     line-height: 105px;
     margin-bottom: 30px;
 }
+
 .footer-description {
     font-size: 14px;
     line-height: 21px;
     opacity: .5;
 }
+
 .footer-menu-title {
     font-size: 34px;
     line-height: 52px;
     margin-bottom: 30px;
 }
+
 .footer-menu {
     list-style: none;
 }
+
 .footer-menu li {
     margin-bottom: 12px;
 }
+
 .footer-link {
     text-decoration: none;
     font-size: 23px;
     opacity: .5;
     color: #fff;
 }
+
 .copy-right {
     font-size: 20px;
     opacity: .5;
     padding: 20px 0;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,.1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
 }
+
 /* mobile device */
-@media  screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     html {
         font-size: 10px;
         line-height: 18px;
     }
-    .container{
+
+    .container {
         max-width: 98%;
     }
+
     /* banner for mobile */
     .nav-links {
         display: none;
     }
+
     .mobile-menu {
         display: block;
         font-size: 30px;
     }
+
     .banner {
         flex-direction: column;
     }
-    .banner > div {
+
+    .banner>div {
         max-width: 100%;
     }
-    
+
     .button {
         font-size: 16px;
         padding: 15px 20px;
     }
+
     .number-of-workout {
         top: 70px;
     }
+
     .number-of-tutorial {
         left: -30px;
         bottom: 250px;
     }
 
     /* habit section */
-    .habits, .extra-run, .footer, .bmi-container {
+    .habits,
+    .extra-run,
+    .footer,
+    .bmi-container,
+    .prices-container {
         flex-direction: column;
     }
-    .footer-column, .bmi-chart, .calculate-bmi {
+
+    .prices-container {
+        gap: 30px;
+    }
+
+    .footer-column,
+    .bmi-chart,
+    .calculate-bmi {
         max-width: 100%;
         width: 100%;
     }
-    .extra-run > div, .extra-run > .extra-run-content {
+
+    .extra-run>div,
+    .extra-run>.extra-run-content {
         max-width: 100%;
         margin-bottom: 30px;
     }
+
     .extra-run .button {
         width: 100%;
         display: block;
         text-align: center;
     }
+
     .team-container {
         grid-template-columns: repeat(1, 1fr);
     }

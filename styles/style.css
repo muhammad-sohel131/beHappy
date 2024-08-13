@@ -607,6 +607,9 @@ footer {
     .prices-container {
         gap: 30px;
     }
+    .package .button {
+        width: 225px;
+    }
 
     .footer-column,
     .bmi-chart,

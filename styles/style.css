@@ -546,6 +546,7 @@ footer {
 
 .copy-right {
     font-size: 20px;
+    line-height: 30px;
     opacity: .5;
     padding: 20px 0;
     text-align: center;
@@ -586,13 +587,17 @@ footer {
         padding: 15px 20px;
     }
 
+    .banner .button {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
     .number-of-workout {
-        top: 70px;
+        top: 140px;
     }
 
     .number-of-tutorial {
         left: -30px;
-        bottom: 250px;
+        bottom: 80px;
     }
 
     /* habit section */
